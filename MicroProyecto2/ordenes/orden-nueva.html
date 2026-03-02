@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Nueva Orden</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="brand">
+                <div class="company">ACME S.A.S</div>
+                <div class="subtitle">Sistema de inventarios</div>
+            </div>
+            <div class="user-actions">
+                <a href="../rol/notificaciones.html" class="icon-link">🔔</a>
+                <a href="../rol/mensajes.html" class="icon-link">✉️</a>
+                <div class="user-menu">
+                    <span class="user-info">👤 Admin ▼</span>
+                    <div class="dropdown">
+                        <a href="../rol/informacion.html">Información</a>
+                        <a href="../rol/restablecer.html">Restablecer contraseña</a>
+                        <a href="../login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../productos/productos.html">Productos</a>
+            <a href="../ordenes/ordenes.html">Ordenes</a>
+            <a href="../cotizaciones/cotizaciones.html">Cotizaciones</a>
+            <a href="../compras/compras.html">Compras</a>
+            <a href="../clientes/clientes.html">Clientes</a>
+            <a href="../proveedores/proveedores.html">Proveedores</a>
+            <a href="../reportes/reportes.html">Reportes</a>
+            <a href="../usuarios/usuarios.html">Usuarios</a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main" style="max-width: 800px;">
+            <h2>Nueva Orden</h2>
+            <form>
+                <div style="display: flex; gap:20px; flex-wrap:wrap;">
+                    <div style="flex:1;">
+                        <div class="form-group"><label>Cliente:</label><input type="text" placeholder="Buscar cliente">
+                        </div>
+                        <div class="form-group"><label>Responsable:</label><input type="text" value="Admin" readonly>
+                        </div>
+                        <div class="form-group"><label>Fecha:</label><input type="date"></div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Disponible</th>
+                                <th>Precio</th>
+                                <th>Subtotal</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Laptop HP</td>
+                                <td>1</td>
+                                <td>Sí</td>
+                                <td>2.500.000</td>
+                                <td>2.500.000</td>
+                                <td><a href="#">🗑️</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mouse</td>
+                                <td>2</td>
+                                <td>No</td>
+                                <td>45.000</td>
+                                <td>90.000</td>
+                                <td><a href="#">🗑️</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div><a href="#">+ Agregar producto</a></div>
+                <div class="alert" style="background:#fff3cd;padding:10px;margin:15px 0;">Verificación: 2 productos
+                    disponibles, El producto_ sin stock suficiente</div>
+                <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                    <div class="form-group"><label>Método de pago:</label><select>
+                            <option>Efectivo</option>
+                            <option>Transferencia</option>
+                            <option>Crédito</option>
+                        </select></div>
+                    <div class="form-group"><label>Estado:</label><select>
+                            <option>En proceso</option>
+                            <option>Terminada</option>
+                        </select></div>
+                </div>
+                <div class="form-group"><strong>TOTAL: $2,590,000</strong></div>
+                <div class="form-actions">
+                    <a href="ordenes.html" class="btn btn-secondary">Cancelar</a>
+                    <input type="checkbox" class="success-checkbox" id="guardarBorrador">
+                    <label for="guardarBorrador" class="btn">Guardar Borrador</label>
+                    <input type="checkbox" class="success-checkbox" id="finalizar">
+                    <label for="finalizar" class="btn">Finalizar</label>
+                    <div class="success-message">✅ Orden guardada correctamente. <a href="ordenes.html">Aceptar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">&copy; 2026 COMERCIALIZADORA ACME S.A.S.</div>
+    </div>
+</body>
+
+</html>

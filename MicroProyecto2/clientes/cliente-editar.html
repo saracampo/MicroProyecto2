@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Editar Cliente</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="brand">
+                <div class="company">ACME S.A.S</div>
+                <div class="subtitle">Sistema de inventarios</div>
+            </div>
+            <div class="user-actions">
+                <a href="../rol/notificaciones.html" class="icon-link">🔔</a>
+                <a href="../rol/mensajes.html" class="icon-link">✉️</a>
+                <div class="user-menu">
+                    <span class="user-info">👤 Admin ▼</span>
+                    <div class="dropdown">
+                        <a href="../rol/informacion.html">Información</a>
+                        <a href="../rol/restablecer.html">Restablecer contraseña</a>
+                        <a href="../login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../productos/productos.html">Productos</a>
+            <a href="../ordenes/ordenes.html">Ordenes</a>
+            <a href="../cotizaciones/cotizaciones.html">Cotizaciones</a>
+            <a href="../compras/compras.html">Compras</a>
+            <a href="../clientes/clientes.html">Clientes</a>
+            <a href="../proveedores/proveedores.html">Proveedores</a>
+            <a href="../reportes/reportes.html">Reportes</a>
+            <a href="../usuarios/usuarios.html">Usuarios</a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main" style="max-width: 500px;">
+            <h2>Editar Cliente</h2>
+            <form>
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" value="Juan">
+                </div>
+                <div class="form-group">
+                    <label>Apellido:</label>
+                    <input type="text" value="Pérez">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" value="juanperez@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono:</label>
+                    <input type="text" value="3001234567">
+                </div>
+                <div class="form-group">
+                    <label>Dirección:</label>
+                    <input type="text" value="Cra 5 #20-30, Popayán">
+                </div>
+                <div class="form-group"><label>Adjuntar imagen:</label><input type="file"></div>
+                <div class="form-actions">
+                    <a href="clientes.html" class="btn btn-secondary">Cancelar</a>
+                    <input type="checkbox" class="success-checkbox" id="actualizar">
+                    <label for="actualizar" class="btn">Actualizar</label>
+                    <div class="success-message">
+                        ✅ Cliente actualizado con éxito.<br>
+                        <a href="clientes.html" class="btn" style="margin-top: 10px;">Aceptar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">
+            &copy; 2026 COMERCIALIZADORA ACME S.A.S.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACME - Orden PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: white;
+            font-family: Arial;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header-pdf {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background: #2a4f8c;
+            color: white;
+            padding: 8px;
+        }
+
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .firma {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-pdf">
+        <h1>COMERCIALIZADORA ACME S.A.S</h1>
+        <p>NIT: 900.123.456-7 - info@acme.com - Tel: 1234567</p>
+        <h2>ORDEN N° OT-024</h2>
+        <p>Fecha: 14 de Febrero de 2026</p>
+    </div>
+    <p><strong>Nombre:</strong> Juan Pérez Rodríguez</p>
+    <p><strong>NIT/CC:</strong> 79.123.456</p>
+    <p><strong>Teléfono:</strong> 3001234567</p>
+    <p><strong>Email:</strong> juan.perez@email.com</p>
+    <p><strong>Dirección:</strong> Carrera 45 #67-89, Bogotá</p>
+    <h3>PRODUCTOS</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Cantidad</th>
+                <th>Producto</th>
+                <th>P.Unidad</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Monitor Samsung</td>
+                <td>$850.000</td>
+                <td>$850.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Teclado Logitech</td>
+                <td>$120.000</td>
+                <td>$240.000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mouse</td>
+                <td>$45.000</td>
+                <td>$45.000</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>TOTAL: $1,135,000</strong></p>
+    <p>Servicios Fecha de emisión: 14/02/2026 10:30 AM</p>
+    <p>Fecha de entrega: 18/02/2026</p>
+    <p>Vendedor/Responsable: Carlos Pérez (Administrador)</p>
+    <p>Método de pago: Tarjeta Débito</p>
+    <p>Estado: [✓] En proceso [ ] Terminada [ ]</p>
+    <div class="firma">
+        <span>Firma Cliente</span>
+        <span>Firma Vendedor</span>
+    </div>
+</body>
+
+</html>

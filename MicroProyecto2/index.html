@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Inicio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="brand">
+                <div class="company">ACME S.A.S</div>
+                <div class="subtitle">Sistema de inventarios</div>
+            </div>
+            <div class="user-actions">
+                <a href="rol/notificaciones.html" class="icon-link">🔔</a>
+                <a href="rol/mensajes.html" class="icon-link">✉️</a>
+                <div class="user-menu">
+                    <span class="user-info">👤 Admin ▼</span>
+                    <div class="dropdown">
+                        <a href="rol/informacion.html">Información</a>
+                        <a href="rol/restablecer.html">Restablecer contraseña</a>
+                        <a href="login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="productos/productos.html">Productos</a>
+            <a href="ordenes/ordenes.html">Ordenes</a>
+            <a href="cotizaciones/cotizaciones.html">Cotizaciones</a>
+            <a href="compras/compras.html">Compras</a>
+            <a href="clientes/clientes.html">Clientes</a>
+            <a href="proveedores/proveedores.html">Proveedores</a>
+            <a href="reportes/reportes.html">Reportes</a>
+            <a href="usuarios/usuarios.html">Usuarios</a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main">
+            <h2>Panel de Control</h2>
+            <div class="report-cards">
+                <div class="card">
+                    <h3>Productos bajos</h3>
+                    <div class="valor">4</div>
+                </div>
+                <div class="card">
+                    <h3>Órdenes hoy</h3>
+                    <div class="valor">12</div>
+                </div>
+                <div class="card">
+                    <h3>Cotizaciones activas</h3>
+                    <div class="valor">5</div>
+                </div>
+                <div class="card">
+                    <h3>Proveedores</h3>
+                    <div class="valor">8</div>
+                </div>
+            </div>
+
+            <div class="stock-section">
+                <div class="stock-header">
+                    <h3>Productos con stock bajo</h3>
+                    <span class="badge">5 alertas</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Actual</th>
+                                <th>Mínimo</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tornillos hexagonales 1/2"</td>
+                                <td>5</td>
+                                <td>15</td>
+                                <td><a href="productos/producto.html" class="btn-small">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Cable eléctrico #12 AWG</td>
+                                <td>3</td>
+                                <td>15</td>
+                                <td><a href="productos/producto.html" class="btn-small">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Pintura acrílica blanca 1GL</td>
+                                <td>2</td>
+                                <td>15</td>
+                                <td><a href="productos/producto.html" class="btn-small">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Tubo PVC 1/2" x 3m</td>
+                                <td>6</td>
+                                <td>15</td>
+                                <td><a href="productos/producto.html" class="btn-small">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Cemento gris 50kg</td>
+                                <td>4</td>
+                                <td>15</td>
+                                <td><a href="productos/producto.html" class="btn-small">Ver</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="stock-footer">
+                    <a href="productos/productos.html" class="btn">Ver todos los productos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">
+            &copy; 2026 COMERCIALIZADORA ACME S.A.S.
+        </div>
+    </div>
+</body>
+
+</html>

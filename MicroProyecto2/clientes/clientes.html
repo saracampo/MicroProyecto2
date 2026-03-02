@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Clientes</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="brand">
+                <div class="company">ACME S.A.S</div>
+                <div class="subtitle">Sistema de inventarios</div>
+            </div>
+            <div class="user-actions">
+                <a href="../rol/notificaciones.html" class="icon-link">🔔</a>
+                <a href="../rol/mensajes.html" class="icon-link">✉️</a>
+                <div class="user-menu">
+                    <span class="user-info">👤 Admin ▼</span>
+                    <div class="dropdown">
+                        <a href="../rol/informacion.html">Información</a>
+                        <a href="../rol/restablecer.html">Restablecer contraseña</a>
+                        <a href="../login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../productos/productos.html">Productos</a>
+            <a href="../ordenes/ordenes.html">Ordenes</a>
+            <a href="../cotizaciones/cotizaciones.html">Cotizaciones</a>
+            <a href="../compras/compras.html">Compras</a>
+            <a href="../clientes/clientes.html">Clientes</a>
+            <a href="../proveedores/proveedores.html">Proveedores</a>
+            <a href="../reportes/reportes.html">Reportes</a>
+            <a href="../usuarios/usuarios.html">Usuarios</a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main">
+            <h2>Gestión de Clientes</h2>
+            <div style="display:flex; gap:10px; margin-bottom:20px;">
+                <a href="cliente-nuevo.html" class="btn">Nuevo Cliente</a>
+                <a href="cliente-excel.html" class="btn btn-excel">Exportar</a>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Dirección</th>
+                            <th>Ordenes</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>juanperez@email.com</td>
+                            <td>Cra 5 #20-30.Popayán</td>
+                            <td>8</td>
+                            <td class="action-icons"><a href="cliente-ver.html">📋</a> <a
+                                    href="cliente-editar.html">✏️</a> <a href="cliente-eliminar.html">🗑️</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>María García</td>
+                            <td>mariagarcia@email.com</td>
+                            <td>Calle 10 #15-45.Popayán</td>
+                            <td>5</td>
+                            <td class="action-icons"><a href="cliente-ver.html">📋</a> <a
+                                    href="cliente-editar.html">✏️</a> <a href="cliente-eliminar.html">🗑️</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carlos López</td>
+                            <td>carloslopez@email.com</td>
+                            <td>Cra 9 #8-12.Popayán</td>
+                            <td>12</td>
+                            <td class="action-icons"><a href="cliente-ver.html">📋</a> <a
+                                    href="cliente-editar.html">✏️</a> <a href="cliente-eliminar.html">🗑️</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana Martínez</td>
+                            <td>anamartinez@email.co</td>
+                            <td>Calle 3 #22-10.Popayán</td>
+                            <td>3</td>
+                            <td class="action-icons"><a href="cliente-ver.html">📋</a> <a
+                                    href="cliente-editar.html">✏️</a> <a href="cliente-eliminar.html">🗑️</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Sánchez</td>
+                            <td>pedrosanchez@email.co</td>
+                            <td>Cra 12 #5-67.Popayán</td>
+                            <td>6</td>
+                            <td class="action-icons"><a href="cliente-ver.html">📋</a> <a
+                                    href="cliente-editar.html">✏️</a> <a href="cliente-eliminar.html">🗑️</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">&copy; 2026 COMERCIALIZADORA ACME S.A.S.</div>
+    </div>
+</body>
+
+</html>

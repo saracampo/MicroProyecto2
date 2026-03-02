@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Órdenes</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="brand">
+                <div class="company">ACME S.A.S</div>
+                <div class="subtitle">Sistema de inventarios</div>
+            </div>
+            <div class="user-actions">
+                <a href="../rol/notificaciones.html" class="icon-link">🔔</a>
+                <a href="../rol/mensajes.html" class="icon-link">✉️</a>
+                <div class="user-menu">
+                    <span class="user-info">👤 Admin ▼</span>
+                    <div class="dropdown">
+                        <a href="../rol/informacion.html">Información</a>
+                        <a href="../rol/restablecer.html">Restablecer contraseña</a>
+                        <a href="../login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../productos/productos.html">Productos</a>
+            <a href="../ordenes/ordenes.html">Ordenes</a>
+            <a href="../cotizaciones/cotizaciones.html">Cotizaciones</a>
+            <a href="../compras/compras.html">Compras</a>
+            <a href="../clientes/clientes.html">Clientes</a>
+            <a href="../proveedores/proveedores.html">Proveedores</a>
+            <a href="../reportes/reportes.html">Reportes</a>
+            <a href="../usuarios/usuarios.html">Usuarios</a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main">
+            <h2>Órdenes de Trabajo</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                <input type="text" placeholder="Buscar orden..." style="flex:1; padding:8px;">
+                <a href="orden-nueva.html" class="btn">Nueva orden</a>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N° Orden</th>
+                            <th>Fecha</th>
+                            <th>Cliente</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OT-024</td>
+                            <td>14/02/2026</td>
+                            <td>Juan Pérez</td>
+                            <td>Terminada</td>
+                            <td class="action-icons"><a href="orden-ver.html">📋</a> <a
+                                    href="orden-eliminar.html">🗑️</a></td>
+                        </tr>
+                        <tr>
+                            <td>OT-025</td>
+                            <td>14/02/2026</td>
+                            <td>María López</td>
+                            <td>En proceso</td>
+                            <td class="action-icons"><a href="orden-ver.html">📋</a> <a
+                                    href="orden-eliminar.html">🗑️</a></td>
+                        </tr>
+                        <tr>
+                            <td>OT-026</td>
+                            <td>13/02/2026</td>
+                            <td>Carlos Ruiz</td>
+                            <td>Terminada</td>
+                            <td class="action-icons"><a href="orden-ver.html">📋</a> <a
+                                    href="orden-eliminar.html">🗑️</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">&copy; 2026 COMERCIALIZADORA ACME S.A.S.</div>
+    </div>
+</body>
+
+</html>

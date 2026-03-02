@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Cotización PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .header-pdf {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 10px;
+        }
+
+        .header-pdf h1 {
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+
+        .header-pdf p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .cliente-info {
+            margin-bottom: 30px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .cliente-info p {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background-color: #2a4f8c;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid #1e3c72;
+        }
+
+        .validez {
+            margin-top: 30px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .firma {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .firma span {
+            border-top: 1px solid #333;
+            width: 200px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #2a4f8c;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .volver:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-pdf">
+        <h1>COMERCIALIZADORA ACME S.A.S</h1>
+        <p>NIT: 900.123.456-7</p>
+        <p>info@acme.com - Tel: 1234567</p>
+        <h2>COTIZACIÓN N° CT-089</h2>
+        <p>Fecha: 14 de Febrero de 2026</p>
+    </div>
+
+    <div class="cliente-info">
+        <p><strong>Cliente:</strong> Ana Gómez</p>
+        <p><strong>Teléfono:</strong> 3001234567</p>
+        <p><strong>Email:</strong> ana@email.com</p>
+    </div>
+
+    <h3>PRODUCTOS</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Cantidad</th>
+                <th>Producto</th>
+                <th>P.Unitario</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Monitor Samsung</td>
+                <td>$850.000</td>
+                <td>$850.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Teclado Logitech</td>
+                <td>$120.000</td>
+                <td>$240.000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mouse</td>
+                <td>$45.000</td>
+                <td>$45.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total">
+        TOTAL: $1,135,000
+    </div>
+
+    <div class="validez">
+        * Cotización válida por 30 días
+    </div>
+
+    <div class="firma">
+        <span>Firma Cliente</span>
+        <span>Firma Vendedor</span>
+    </div>
+
+    <p style="margin-top: 30px;">
+    </p>
+</body>
+
+</html>

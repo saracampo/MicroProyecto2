@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - Reportes</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="brand">
+                <div class="company">ACME S.A.S</div>
+                <div class="subtitle">Sistema de inventarios</div>
+            </div>
+            <div class="user-actions">
+                <a href="../rol/notificaciones.html" class="icon-link">🔔</a>
+                <a href="../rol/mensajes.html" class="icon-link">✉️</a>
+                <div class="user-menu">
+                    <span class="user-info">👤 Admin ▼</span>
+                    <div class="dropdown">
+                        <a href="../rol/informacion.html">Información</a>
+                        <a href="../rol/restablecer.html">Restablecer contraseña</a>
+                        <a href="../login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../productos/productos.html">Productos</a>
+            <a href="../ordenes/ordenes.html">Ordenes</a>
+            <a href="../cotizaciones/cotizaciones.html">Cotizaciones</a>
+            <a href="../compras/compras.html">Compras</a>
+            <a href="../clientes/clientes.html">Clientes</a>
+            <a href="../proveedores/proveedores.html">Proveedores</a>
+            <a href="../reportes/reportes.html">Reportes</a>
+            <a href="../usuarios/usuarios.html">Usuarios</a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main">
+            <h2>Centro de Reportes</h2>
+            <div style="display:flex; gap:15px; flex-wrap:wrap; margin-bottom:30px;">
+                <div class="form-group"><label>Desde:</label><input type="date"></div>
+                <div class="form-group"><label>Hasta:</label><input type="date"></div>
+                <div style="align-self:flex-end;"><button class="btn">Aplicar</button></div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:15px;">
+                <!-- Reporte 1: Inventario -->
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; background:#f9f9f9; padding:15px;">
+                    <span><strong>Reporte 1 INVENTARIO</strong></span>
+                    <a href="reporte-inventario.html" class="btn btn-small">Generar</a>
+                </div>
+                <!-- Reporte 2: Órdenes -->
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; background:#f9f9f9; padding:15px;">
+                    <span><strong>Reporte 2 ORDENES</strong></span>
+                    <a href="reporte-ordenes.html" class="btn btn-small">Generar</a>
+                </div>
+                <!-- Reporte 3: Ventas y Compras Totales -->
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; background:#f9f9f9; padding:15px;">
+                    <span><strong>Reporte 3 VENTAS Y COMPRAS TOTALES</strong></span>
+                    <a href="reporte-ventas-compras.html" class="btn btn-small">Generar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">&copy; 2026 COMERCIALIZADORA ACME S.A.S.</div>
+    </div>
+</body>
+
+</html>
