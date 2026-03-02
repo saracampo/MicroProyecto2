@@ -7,7 +7,7 @@ Sara Campo
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=/Microproyecto2/MicroProyecto2/">
+    <meta http-equiv="refresh" content="0; url=/Microproyecto2/MicroProyecto2/login.html">
 </head>
 <body>
     <p>Redirigiendo al login...</p>
